@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ventana de información</title>
+  </head>
+  <body>
+    <h1>Bienvenido al sitio web</h1>
+    <button
+      onclick="document.getElementById('mensaje').style.display = 'block';"
+    >
+      Mostrar información
+    </button>
+
+    <div id="mensaje" style="display: none">
+      <h2>Información importante</h2>
+      <p>¡Has iniciado sesión!</p>
+      <button
+        onclick="document.getElementById('mensaje').style.display = 'none';"
+      >
+        Cerrar
+      </button>
+    </div>
+    <div>
+        <button onclick="window.history.back()">Regresar</button>
+    </div>
+  </body>
+</html>
