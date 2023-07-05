@@ -1,27 +1,36 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Pets Garden - Registro</title>
+    <title>Registro</title>
   </head>
   <body>
-    <h2>Registro en Pets Garden</h2>
-    <form method="GET">
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" required />
-      <br /><br />
+    <h1>Registro</h1>
 
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" required />
-      <br /><br />
-
-      <label for="contrasena">Contraseña:</label>
-      <input type="password" id="contrasena" required />
-      <br /><br />
-
-      <a href="index.html">
-        <input type="submit" value="Registrarse" />
-      </a>
-      <button onclick="window.history.back()">Regresar</button>
+    <form>
+      <input
+        type="text"
+        placeholder="Nombre de usuario"
+        id="registro-username"
+      />
+      <input type="password" placeholder="Contraseña" id="registro-password" />
+      <button type="button" onclick="registrar()">Registrarse</button>
     </form>
+
+    <script>
+      function registrar() {
+        var username = document.getElementById("registro-username").value;
+        var password = document.getElementById("registro-password").value;
+
+        // Realizar el registro (puedes agregar tu lógica de registro personalizada aquí)
+        alert("Registro exitoso. Ahora puedes iniciar sesión");
+
+        // Limpiar los campos del formulario después del registro
+        document.getElementById("registro-username").value = "";
+        document.getElementById("registro-password").value = "";
+
+        // Redirigir a la página de inicio (index.html outside the ventanas folder)
+        window.location.href = "../index.html";
+      }
+    </script>
   </body>
 </html>
