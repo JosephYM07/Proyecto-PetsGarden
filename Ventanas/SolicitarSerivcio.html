@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pets Garden - Solicitar-Servicio </title>
+</head>
+<body>
+    <section>
+        <h2>Solicitar servicio</h2>
+        <!-- Formulario de solicitud de servicio -->
+        <form>
+            <label for="especie">Especie:</label>
+            <select id="especie">
+                <option value="perro">Perro</option>
+                <option value="gato">Gato</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label for="tamano">Tamaño:</label>
+            <select id="tamano">
+                <option value="pequeno">Pequeño</option>
+                <option value="mediano">Mediano</option>
+                <option value="grande">Grande</option>
+            </select>
+
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha">
+
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora">
+
+            <button type="submit">Solicitar servicio</button>
+        
+        </form>
+        <section>
+            <img 
+            src="imagenes/servicio.jpg"
+            alt="Imagen de servicio"
+            style="width: 30%;height: 20%;"/>
+        </section>
+        <button onclick="window.history.back()">Regresar</button>
+    </section>
+</body>
+</html>
