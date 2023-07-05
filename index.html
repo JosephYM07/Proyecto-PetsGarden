@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pets Garden - Inicio</title>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <!-- Barra de navegación -->
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Quiénes somos</a></li>
+                <li><a href="#">Lo que ofrecemos</a></li>
+                <li><a href="#">Solicitar servicio</a></li>
+                <li><a href="#">Cuidadores</a></li>
+                <li><a href="#">Soporte</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección de inicio -->
+        <section id="inicio">
+            <h1>Bienvenido a Pets Garden</h1>
+            <p>La plataforma líder en transporte y cuidado de mascotas.</p>
+            <!-- Formulario de inicio de sesión -->
+            <form>
+                <input type="text" placeholder="Nombre de usuario">
+                <input type="password" placeholder="Contraseña">
+                <button type="submit">Iniciar sesión</button>
+            </form>
+            <!-- Enlace para registro de nuevos usuarios -->
+            <a href="#">¿Nuevo usuario? Regístrate aquí</a>
+        </section>
+
+        <!-- Sección Quiénes somos -->
+        <section id="quienes-somos">
+            <h2>Quiénes somos</h2>
+            <p>Aquí encontrarás información sobre nuestra empresa y nuestra misión, visión y valores.</p>
+        </section>
+
+        <!-- Sección Lo que ofrecemos -->
+        <section id="lo-que-ofrecemos">
+            <h2>Lo que ofrecemos</h2>
+            <p>Explora nuestros servicios de transporte y cuidado de mascotas, y descubre sus características y beneficios.</p>
+        </section>
+
+        <!-- Sección Solicitar servicio -->
+        <section id="solicitar-servicio">
+            <h2>Solicitar servicio</h2>
+            <!-- Formulario de solicitud de servicio -->
+            <form>
+                <label for="especie">Especie:</label>
+                <select id="especie">
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="otro">Otro</option>
+                </select>
+
+                <label for="tamano">Tamaño:</label>
+                <select id="tamano">
+                    <option value="pequeno">Pequeño</option>
+                    <option value="mediano">Mediano</option>
+                    <option value="grande">Grande</option>
+                </select>
+
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha">
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora">
+
+                <button type="submit">Solicitar servicio</button>
+            </form>
+        </section>
+
+        <!-- Sección Cuidadores -->
+        <section id="cuidadores">
+            <h2>Cuidadores</h2>
+            <!-- Perfil del cuidador 1 -->
+            <div class="perfil-cuidador">
+                <img src="cuidador1.jpg" alt="Foto del cuidador 1">
+                <h3>Nombre del cuidador 1</h3>
+                <p>Experiencia: X años</p>
+                <p>Reseñas: X</p>
+            </div>
+
+            <!-- Perfil del cuidador 2 -->
+            <div class="perfil-cuidador">
+                <img src="cuidador2.jpg" alt="Foto del cuidador 2">
+                <h3>Nombre del cuidador 2</h3>
+                <p>Experiencia: X años</p>
+                <p>Reseñas: X</p>
+            </div>
+
+            <!-- Agregar más perfiles de cuidadores según sea necesario -->
+        </section>
+
+        <!-- Sección Soporte -->
+        <section id="soporte">
+            <h2>Soporte</h2>
+            <!-- Formulario de soporte al cliente -->
+            <form>
+                <textarea placeholder="Escribe tu consulta o reporte"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Todos los derechos reservados &copy; Pets Garden 2023</p>
+    </footer>
+</body>
+</html>
