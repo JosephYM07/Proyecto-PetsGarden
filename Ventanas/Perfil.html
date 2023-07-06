@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pets Garden - Perfil del Usuario</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../Ventanas/Quienes_Somos.html">Quiénes somos</a></li>
+        <li><a href="../Ventanas/Ofrecemos.html">Lo que ofrecemos</a></li>
+        <li><a href="../Ventanas/ServiciosLectura.html">Solicitar servicio</a></li>
+        <li><a href="../Ventanas/Cuidadores.html">Cuidadores</a></li>
+        <li><a href="../Ventanas/Soporte.html">Soporte</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <h2>Perfil del Usuario</h2>
+      <div id="informacionUsuario"></div>
+      <h3>Solicitar Servicio</h3>
+      <!-- Formulario de solicitud de servicio -->
+      <form id="formularioSolicitud">
+        <label for="especie">Especie:</label>
+        <select id="especie">
+          <option value="perro">Perro</option>
+          <option value="gato">Gato</option>
+          <option value="otro">Otro</option>
+        </select>
+
+        <label for="tamano">Tamaño:</label>
+        <select id="tamano">
+          <option value="pequeno">Pequeño</option>
+          <option value="mediano">Mediano</option>
+          <option value="grande">Grande</option>
+        </select>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" />
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" />
+
+        <button type="submit">Enviar Solicitud</button>
+      </form>
+    </section>
+
+    <script>
+      // Obtener referencia al formulario de solicitud
+      const formularioSolicitud = document.getElementById(
+        "formularioSolicitud"
+      );
+
+      // Agregar evento de envío al formulario de solicitud
+      formularioSolicitud.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Obtener los valores seleccionados del formulario de solicitud
+        const especie = document.getElementById("especie").value;
+        const tamano = document.getElementById("tamano").value;
+        const fecha = document.getElementById("fecha").value;
+        const hora = document.getElementById("hora").value;
+
+        // Realizar acciones con los datos de la solicitud
+        // Por ejemplo, enviar la solicitud al servidor, mostrar un mensaje de confirmación, etc.
+
+        alert("Solicitud enviada con éxito");
+
+        // Limpiar el formulario de solicitud
+        formularioSolicitud.reset();
+      });
+
+      // Obtener información del usuario y mostrarla
+      const informacionUsuario = document.getElementById("informacionUsuario");
+      informacionUsuario.textContent = "Bienvenido, Usuario";
+    </script>
+  </body>
+</html>
