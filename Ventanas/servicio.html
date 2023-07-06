@@ -1,43 +1,75 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pets Garden - Solicitar-Servicio </title>
+  <title>Pets Garden - Solicitar Servicio</title>
 </head>
 <body>
+  <section>
+    <h2>Solicitar servicio</h2>
+    <!-- Formulario de solicitud de servicio -->
+    <form id="formularioServicio">
+      <label for="especie">Especie:</label>
+      <select id="especie">
+        <option value="perro">Perro</option>
+        <option value="gato">Gato</option>
+        <option value="otro">Otro</option>
+      </select>
+
+      <label for="tamano">Tamaño:</label>
+      <select id="tamano">
+        <option value="pequeno">Pequeño</option>
+        <option value="mediano">Mediano</option>
+        <option value="grande">Grande</option>
+      </select>
+
+      <label for="fecha">Fecha:</label>
+      <input type="date" id="fecha">
+
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora">
+
+      <button type="submit">Añadir al carrito</button>
+    </form>
+
     <section>
-        <h2>Solicitar servicio</h2>
-        <!-- Formulario de solicitud de servicio -->
-        <form>
-            <label for="especie">Especie:</label>
-            <select id="especie">
-                <option value="perro">Perro</option>
-                <option value="gato">Gato</option>
-                <option value="otro">Otro</option>
-            </select>
+        <img src="../img/servicio.jpg" alt="Imagen de servicio" style="width: 30%; height: 20%;" id="iconoSeleccionado">    </section>
 
-            <label for="tamano">Tamaño:</label>
-            <select id="tamano">
-                <option value="pequeno">Pequeño</option>
-                <option value="mediano">Mediano</option>
-                <option value="grande">Grande</option>
-            </select>
+        <button onclick="window.location.href = '../index.html'">Regresar</button>  </section>
 
-            <label for="fecha">Fecha:</label>
-            <input type="date" id="fecha">
+  <script>
+    // Array para almacenar los servicios seleccionados en el carrito
+    const carritoServicios = [];
 
-            <label for="hora">Hora:</label>
-            <input type="time" id="hora">
+    // Obtener referencia al formulario
+    const formularioServicio = document.getElementById("formularioServicio");
 
-            <button type="submit">Solicitar servicio</button>
-        
-        </form>
-        <section>
-            <img 
-            src="imagenes/servicio.jpg"
-            alt="Imagen de servicio"
-            style="width: 30%;height: 20%;"/>
-        </section>
-        <button onclick="window.history.back()">Regresar</button>
-    </section>
+    // Agregar evento de envío al formulario
+    formularioServicio.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      // Obtener los valores seleccionados del formulario
+      const especie = document.getElementById("especie").value;
+      const tamano = document.getElementById("tamano").value;
+      const fecha = document.getElementById("fecha").value;
+      const hora = document.getElementById("hora").value;
+
+      // Crear objeto de servicio
+      const servicio = {
+        especie,
+        tamano,
+        fecha,
+        hora
+      };
+
+      // Agregar servicio al carrito
+      carritoServicios.push(servicio);
+
+      // Mostrar mensaje de confirmación
+      alert("Servicio añadido al carrito");
+
+      // Limpiar el formulario
+      formularioServicio.reset();
+    });
+  </script>
 </body>
 </html>
