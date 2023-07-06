@@ -1,0 +1,107 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Estilos de encabezado */
+header {
+  background-color: rgba(0, 128, 128, 0.836);
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
+}
+
+/* Estilos de contenido principal */
+#inicio {
+  background-color: teal;
+  padding: 20px;
+  text-align: center;
+}
+
+#inicio h1 {
+  font-size: 45px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+#inicio p {
+  color: #fff;
+}
+
+#inicio-sesion,
+#registro {
+  margin-top: 20px;
+}
+
+#inicio-sesion h2,
+#registro h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#inicio-sesion a,
+#registro a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+a.register-link {
+  display: block;
+  margin-top: 20px;
+  color: #666;
+}
+
+/* Estilos de pie de página */
+footer {
+  background-color: rgba(0, 128, 128, 0.836);
+  padding: 10px 0;
+  text-align: center;
+}
+
+footer p {
+  color: #fff;
+}
+
+/* Estilos adicionales */
+.image-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos adicionales */
+.centered-title {
+  text-align: center;
+}
