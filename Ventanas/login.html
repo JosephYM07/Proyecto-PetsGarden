@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Iniciar Sesión</title>
+    <link rel="stylesheet" href="../style/index.css">
   </head>
   <body>
     <nav>
@@ -34,7 +35,8 @@
           // Redirigir a la página SolicitarSerivcio.html in the same Ventanas folder
           window.location.href = "Perfil.html";
         } else {
-          alert("Credenciales incorrectas. Inténtalo de nuevo.");
+          alert("Inicio de sesión exitoso");
+          window.location.href = "Perfil.html";
         }
       }
     </script>
