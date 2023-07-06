@@ -2,9 +2,10 @@
 <html>
   <head>
     <title>Iniciar Sesión</title>
-    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/registro.css">
   </head>
   <body>
+    <header>
     <nav>
       <ul>
         <li><a href="../Ventanas/Quienes_Somos.html">Quiénes somos</a></li>
@@ -16,7 +17,8 @@
         <li><a href="../Ventanas/Soporte.html">Soporte</a></li>
       </ul>
     </nav>
-
+  </header>
+  <main>
     <h1>Iniciar Sesión</h1>
 
     <form>
@@ -24,7 +26,7 @@
       <input type="password" placeholder="Contraseña" id="login-password" />
       <button type="button" onclick="iniciarSesion()">Iniciar Sesión</button>
     </form>
-
+  </main>
     <script>
       function iniciarSesion() {
         var username = document.getElementById("login-username").value;

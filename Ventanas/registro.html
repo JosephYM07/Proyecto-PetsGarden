@@ -2,9 +2,10 @@
 <html>
   <head>
     <title>Registro</title>
-    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/registro.css">
   </head>
   <body>
+    <header>
     <nav>
       <ul>
         <li><a href="../Ventanas/Quienes_Somos.html">Quiénes somos</a></li>
@@ -16,7 +17,9 @@
         <li><a href="../Ventanas/Soporte.html">Soporte</a></li>
       </ul>
     </nav>
-
+  </header>
+  <main>
+    <section id="registro">
     <h1>Registro</h1>
 
     <form>
@@ -28,7 +31,8 @@
       <input type="password" placeholder="Contraseña" id="registro-password" />
       <button type="button" onclick="registrar()">Registrarse</button>
     </form>
-
+  </section>
+</main>
     <script>
       function registrar() {
         var username = document.getElementById("registro-username").value;
@@ -43,6 +47,7 @@
         // Redirigir a la página de inicio (index.html outside the ventanas folder)
         window.location.href = "../index.html";
       }
+  
     </script>
   </body>
 </html>
